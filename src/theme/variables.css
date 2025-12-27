@@ -1,2 +1,21 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+:root {
+  /* Tipografía global */
+  --ion-font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Colores base (modo oscuro) */
+  --ion-background-color: #070707;
+  --ion-text-color: #ffffff;
+
+  /* Toolbar */
+  --ion-toolbar-background: #0b0b0b;
+  --ion-toolbar-color: #ffffff;
+
+  /* Tab bar (barra inferior) */
+  --ion-tab-bar-background: #0b0b0b;
+  --ion-tab-bar-color: rgba(255,255,255,0.65);
+  --ion-tab-bar-color-selected: #ff4b3c;
+
+  /* Color primario (rojo) */
+  --ion-color-primary: #ff4b3c;
+  --ion-color-primary-contrast: #ffffff;
+}
