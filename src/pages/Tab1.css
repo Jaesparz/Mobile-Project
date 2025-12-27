@@ -1,0 +1,126 @@
+.home {
+    --background: linear-gradient(180deg, #070707, #0b0a0a);
+    color: #fff;
+}
+
+/* FOTO DEL MAN PEPUDO */
+.home__hero {
+    padding: 16px;
+}
+
+.home__title {
+    margin: 12px 0 6px;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+    /* clave */
+}
+
+.home__lead {
+    margin: 0 0 12px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.4;
+}
+
+.home__accent {
+    color: #ff4b3c;
+    font-weight: 800;
+}
+
+.home__cta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 10px 0 14px;
+}
+
+/* CHIP (pill) */
+.home__pill {
+    --color: #fff;
+    --background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    font-weight: 700;
+}
+
+/* BOTONES */
+.btnPrimary {
+    --background: #ff4b3c;
+    --color: #fff;
+    font-weight: 800;
+    text-transform: none;
+}
+
+.btnOutline {
+    --color: #fff;
+    text-transform: none;
+}
+
+/* Features */
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.feature ion-icon {
+    color: #ff4b3c;
+    font-size: 18px;
+}
+
+/* SECCIONES */
+.home__section {
+    padding: 16px;
+}
+
+.sectionTitle {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.sectionSubtitle {
+    margin: 0 0 12px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+/* CARDS */
+.card {
+    --background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+}
+
+.card ion-card-title {
+    --color: #fff;
+    font-weight: 900;
+}
+
+.card ion-card-content {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.card__icon {
+    color: #ff4b3c;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* TESTIMONIOS */
+.quote {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.90);
+    line-height: 1.4;
+}
+
+.author {
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 700;
+}
