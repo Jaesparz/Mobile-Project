@@ -1,0 +1,377 @@
+.plans {
+  --background: var(--ion-background-color);
+}
+
+/* ===============================================
+   HERO SECTION
+   =============================================== */
+.plans__hero {
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, #0b0b0b 0%, #070707 100%);
+  position: relative;
+}
+
+.plans__hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 75, 60, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.plans__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.plans__subtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================================
+   GRID CONTAINER
+   =============================================== */
+.plans__grid {
+  padding: 2rem 1rem;
+}
+
+.plans__grid ion-row {
+  align-items: stretch;
+}
+
+/* ===============================================
+   PLAN CARD - BASE
+   =============================================== */
+.planCard {
+  --background: #0f0f0f;
+  --color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: visible;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* ===============================================
+   PLAN CARD - RECOMENDADO
+   =============================================== */
+.planCard--recommended {
+  border: 2px solid var(--ion-color-primary);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 75, 60, 0.08) 0%,
+    rgba(15, 15, 15, 1) 30%
+  );
+  box-shadow: 0 8px 32px rgba(255, 75, 60, 0.3);
+}
+
+.planCard--recommended:hover {
+  border-color: var(--ion-color-primary);
+  box-shadow: 0 16px 48px rgba(255, 75, 60, 0.4);
+  transform: translateY(-12px) scale(1.02);
+}
+
+/* ===============================================
+   PLAN CARD - BADGE
+   =============================================== */
+.planCard__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--ion-color-primary) 0%, #ff6b5c 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.375rem 1.25rem;
+  border-radius: 20px;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(255, 75, 60, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===============================================
+   PLAN CARD - HEADER
+   =============================================== */
+.planCard ion-card-header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.planCard__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1.25rem;
+  background: linear-gradient(135deg, var(--ion-color-primary) 0%, #ff6b5c 100%);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(255, 75, 60, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.planCard:hover .planCard__icon {
+  transform: rotate(360deg);
+}
+
+.planCard__icon ion-icon {
+  font-size: 2.25rem;
+  color: #ffffff;
+}
+
+.planCard__name {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1rem;
+  color: #ffffff;
+}
+
+/* ===============================================
+   PLAN CARD - PRECIO
+   =============================================== */
+.planCard__price {
+  text-align: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.price__amount {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--ion-color-primary);
+  line-height: 1;
+  display: inline-block;
+}
+
+.price__period {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+/* ===============================================
+   PLAN CARD - CONTENT
+   =============================================== */
+.planCard ion-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/* ===============================================
+   PLAN CARD - FEATURES
+   =============================================== */
+.planCard__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  flex: 1;
+}
+
+.planCard__features .feature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+
+
+.planCard__features .feature:last-child {
+  margin-bottom: 0;
+}
+
+.planCard__features .feature ion-icon {
+  color: var(--ion-color-primary);
+  font-size: 1.375rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(255, 75, 60, 0.5));
+}
+
+.planCard__features .feature span {
+  display: block;
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Efecto especial para el plan recomendado */
+.planCard--recommended .planCard__features .feature {
+  background: rgba(255, 75, 60, 0.05);
+  border-color: rgba(255, 75, 60, 0.1);
+}
+
+.planCard--recommended .planCard__features .feature:hover {
+  background: rgba(255, 75, 60, 0.08);
+  border-color: rgba(255, 75, 60, 0.3);
+}
+
+/* ===============================================
+   PLAN CARD - BUTTON
+   =============================================== */
+.planCard .btnPrimary,
+.planCard .btnOutline {
+  margin-top: auto;
+  height: 52px;
+  font-size: 1rem;
+  font-weight: 700;
+  --border-radius: 12px;
+}
+
+.planCard--recommended .btnPrimary {
+  --box-shadow: 0 8px 24px rgba(255, 75, 60, 0.4);
+}
+
+.planCard--recommended .btnPrimary:hover {
+  --box-shadow: 0 12px 32px rgba(255, 75, 60, 0.5);
+}
+
+/* ===============================================
+   INFO SECTION
+   =============================================== */
+.plans__info {
+  padding: 1rem 1rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.plans__info .card {
+  --background: #0f0f0f;
+  --color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.plans__info .card ion-card-header {
+  padding: 1.5rem;
+  border-bottom: none;
+}
+
+.plans__info .card ion-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.plans__info .card ion-card-content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.plans__info p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
+
+.plans__info p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.plans__info strong {
+  color: var(--ion-color-primary);
+  font-weight: 700;
+}
+
+/* ===============================================
+   RESPONSIVE - TABLET
+   =============================================== */
+@media (min-width: 768px) {
+  .plans__hero {
+    padding: 4rem 2rem 3rem;
+  }
+
+  .plans__title {
+    font-size: 3rem;
+  }
+
+  .plans__subtitle {
+    font-size: 1.25rem;
+  }
+
+  .plans__grid {
+    padding: 3rem 2rem;
+  }
+
+  .planCard__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .planCard__icon ion-icon {
+    font-size: 2.5rem;
+  }
+
+  .planCard__name {
+    font-size: 2rem;
+  }
+
+  .price__amount {
+    font-size: 4rem;
+  }
+
+  .planCard__features .feature {
+    padding: 1.125rem 1.25rem;
+  }
+
+  .planCard__features .feature span {
+    font-size: 1rem;
+  }
+}
+
+/* ===============================================
+   RESPONSIVE - DESKTOP
+   =============================================== */
+@media (min-width: 992px) {
+  .plans__grid ion-col[size-md="4"] {
+    display: flex;
+  }
+
+  .plans__grid ion-col[size-md="4"] .planCard {
+    width: 100%;
+  }
+
+  /* El plan recomendado ligeramente más grande en desktop */
+  .planCard--recommended {
+    transform: scale(1.05);
+  }
+
+  .planCard--recommended:hover {
+    transform: scale(1.08) translateY(-12px);
+  }
+}
