@@ -9,6 +9,13 @@ import {
   IonTabs,
   setupIonicReact
 } from '@ionic/react';
+import {
+  home,
+  homeOutline,
+  storefront,
+  mail,
+  fitness
+} from "ionicons/icons";
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
@@ -59,7 +66,7 @@ const App: React.FC = () => (
           <Route exact path="/tab2">
             <Tab2 />
           </Route>
-          <Route path="/tab3">
+          <Route exact path="/tab3">
             <Tab3 />
           </Route>
           <Route exact path="/">
@@ -68,23 +75,23 @@ const App: React.FC = () => (
 
           <Route exact path="/tab4">
             <Tab4 />
-            </Route>
+          </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
+            <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Inicio</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={ellipse} />
+            <IonIcon aria-hidden="true" icon={storefront} />
             <IonLabel>Tienda</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
+            <IonIcon aria-hidden="true" icon={fitness} />
             <IonLabel>Planes</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab4" href="/tab4">
-            <IonIcon aria-hidden="true" icon={triangle} />
+            <IonIcon aria-hidden="true" icon={mail} />
             <IonLabel>Contacto</IonLabel>
           </IonTabButton>
         </IonTabBar>
