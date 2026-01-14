@@ -54,7 +54,7 @@ const Tab1: React.FC = () => {
   ];
 
   const stats = [
-    { number: "5000+", label: "Miembros activos" },
+    { number: "500+", label: "Miembros activos" },
     { number: "15+", label: "Años de experiencia" },
     { number: "98%", label: "Satisfacción" },
     { number: "24/7", label: "Acceso" },
