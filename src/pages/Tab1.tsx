@@ -65,35 +65,35 @@ const Tab1: React.FC = () => {
       name: "Carlos Mendoza",
       specialty: "Entrenador Personal Certificado",
       experience: "10+ años",
-      image: "public/i1.png",
+      image: "./i1.png",
     },
     {
       name: "María Rodríguez",
       specialty: "Instructora de Yoga & Pilates",
       experience: "8+ años",
-      image: "public/i2.png",
+      image: "./i2.png",
     },
     {
       name: "Jorge Silva",
       specialty: "Especialista en Fuerza",
       experience: "12+ años",
-      image: "public/i3.png",
+      image: "./i3.png",
     },
     {
       name: "Ana Gómez",
       specialty: "Nutricionista Deportiva",
       experience: "7+ años",
-      image: "public/i4.png",
+      image: "./i4.png",
     },
   ];
 
   const galleryImages = [
-    "public/ag1.png",
-    "public/ag2.png",
-    "public/ag4.png",
-    "public/ag5.png",
-    "public/ag6.png",
-    
+    "./ag1.png",
+    "./ag2.png",
+    "./ag4.png",
+    "./ag5.png",
+    "./ag6.png",
+
   ];
 
   const testimonials = [
@@ -263,7 +263,7 @@ const Tab1: React.FC = () => {
               </IonCol>
               <IonCol size="12" sizeMd="6">
                 <div className="about__image">
-                  <IonImg src="public/ag7.png" alt="Equipo Alpha Gym" />
+                  <IonImg src="./ag7.png" alt="Equipo Alpha Gym" />
                 </div>
               </IonCol>
             </IonRow>
@@ -275,7 +275,7 @@ const Tab1: React.FC = () => {
           <IonText>
             <h2 className="sectionTitle">Nuestras instalaciones</h2>
           </IonText>
-         
+
 
           <div className="gallery">
             <button className="gallery__btn gallery__btn--prev" onClick={prevGalleryImage}>
@@ -297,9 +297,8 @@ const Tab1: React.FC = () => {
               {galleryImages.map((_, idx) => (
                 <button
                   key={idx}
-                  className={`gallery__dot ${
-                    idx === currentGalleryIndex ? "gallery__dot--active" : ""
-                  }`}
+                  className={`gallery__dot ${idx === currentGalleryIndex ? "gallery__dot--active" : ""
+                    }`}
                   onClick={() => setCurrentGalleryIndex(idx)}
                 />
               ))}
@@ -310,9 +309,8 @@ const Tab1: React.FC = () => {
                 {galleryImages.slice(0, 4).map((img, idx) => (
                   <IonCol key={idx} size="6" sizeMd="3">
                     <div
-                      className={`gallery__thumb ${
-                        idx === currentGalleryIndex ? "gallery__thumb--active" : ""
-                      }`}
+                      className={`gallery__thumb ${idx === currentGalleryIndex ? "gallery__thumb--active" : ""
+                        }`}
                       onClick={() => setCurrentGalleryIndex(idx)}
                     >
                       <IonImg src={img} alt={`Thumbnail ${idx + 1}`} />
